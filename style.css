@@ -1,0 +1,524 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #121212;
+  color: #eaeaea;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #64ffda;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #64ffda;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.header-text {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #64ffda;
+  color: #121212;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.btn:hover {
+  background: #52e0c4;
+}
+
+/* Header / Hero */
+header {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00f7ff;
+  text-shadow: none !important; 
+  transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #bbb;
+}
+
+/* Glow + code style for hero */
+.glow {
+  color: #fff;
+  text-shadow: 0 0 5px #64ffda, 0 0 10px #64ffda, 0 0 20px #64ffda;
+}
+
+.subtitle .code-style {
+  font-family: "Courier New", monospace;
+  background: #1e1e1e;
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: #64ffda;
+}
+
+/* ensure <strong> actually appears bold in the About section */
+#about strong,
+#about b {
+  font-weight: 700;                    /* force heavy weight */
+  font-family: "Inter", Arial, sans-serif; /* fallback to system if Inter lacks weight */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* Experience container */
+.experience-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  gap: 100px;                  /* space between cards */
+  padding: 20px;
+  scrollbar-width: none;      /* Firefox hide scrollbar */
+}
+.experience-container::-webkit-scrollbar {
+  display: none;              /* Chrome/Safari hide scrollbar */
+}
+
+
+/* Experience card */
+.item {
+  flex: 0 0 85%;              /* each card takes 85% of viewport width */
+  max-width: 1000px;          /* limit for big screens */
+  margin: 0 auto;
+
+  background: #1e1e1e;
+  padding: 40px;
+  border-radius: 14px;
+  border: 1px solid #2c2c2c;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-snap-align: center;  /* snap nicely */
+}
+
+
+/* Glow effect */
+.item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(100, 255, 218, 0.2);
+}
+
+/* Headings */
+.item h3 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+/* Lists */
+.item ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Tech stack highlight */
+.item strong {
+  color: #64ffda;
+  font-weight: bold;
+}
+
+/* 🔹 Responsive slider fixes */
+@media (max-width: 1024px) {
+  .experience-container {
+    gap: 60px; /* smaller gap for tablets */
+  }
+  .item {
+    flex: 0 0 90%;
+    padding: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    gap: 40px; /* smaller gap for smaller tablets */
+  }
+  .item {
+    flex: 0 0 95%;
+    padding: 22px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-container {
+    gap: 20px; /* small gap for phones */
+  }
+  .item {
+    flex: 0 0 100%;  /* full width card */
+    padding: 16px;   /* tighter padding for phone */
+    font-size: 0.9rem;
+  }
+}
+
+/* Container for tech skills */
+.tech-skill-container {
+  display: flex;
+  flex-wrap: wrap;            /* allows wrapping on small screens */
+  gap:  9px 11px;                   /* clean spacing between badges */
+  margin-top: 8px;
+}
+
+/* Tech skill badges */
+.tech-skill {
+  display: inline-block;
+  margin: 3px 5px 0 0;        /* tighter spacing */
+  padding: 4px 9px;           /* less padding */
+  border-radius: 14px;        /* smaller pill shape */
+
+  background: rgba(100, 255, 218, 0.1);
+  border: 1px solid #64ffda;
+  color: #64ffda;
+
+  font-size: 0.8rem;          /* slightly smaller text */
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+/* Hover effect */
+.tech-skill:hover {
+  background: #64ffda;
+  color: #0a192f;
+  transform: translateY(-2px); /* less lift so it feels crisp */
+  box-shadow: 0 4px 12px rgba(100, 255, 218, 0.2);
+}
+
+/* Container for the link buttons */
+.item-links {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  gap: 12px;                 /* space between buttons */
+  margin-top: 15px;
+  flex-wrap: wrap;           /* wraps neatly on small screens */
+}
+
+/* Style for each link */
+.item-links a {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.8rem;       /* smaller than skills */
+  font-weight: 600;
+  border-radius: 6px;
+
+  background: rgba(100, 255, 218, 0.1);
+  border: 1px solid #64ffda;
+  color: #64ffda;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.item-links a:hover {
+  background: #64ffda;
+  color: #0a192f;
+  box-shadow: 0 4px 12px rgba(100, 255, 218, 0.25);
+  transform: translateY(-2px);
+}
+
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #2c2c2c;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(100, 255, 218, 0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.project-card .links a {
+  margin-right: 15px;
+  font-size: 0.9rem;
+}
+
+/* Skills container */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+/* Individual skill block */
+.skill span {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #64ffda;
+  font-size: 1rem;
+}
+
+/* Progress bar container */
+.bar {
+  width: 100%;
+  height: 16px;
+  background: #111; /* deep dark background */
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #2c2c2c;
+  position: relative;
+}
+
+/* Progress bar fill */
+.fill {
+  height: 100%;
+  background: #2e8b75; /* ✅ darker teal, subtle and sharp */
+  text-align: right;
+  padding-right: 8px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #ffffff; /* crisp white text */
+  font-family: "Courier New", monospace;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  transition: width 0.6s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Hover effect - subtle */
+.skill:hover .fill {
+  background: #2fbf9b; /* slightly darker teal on hover */
+}
+
+
+/* ✅ Responsive: Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .skills-list {
+    gap: 14px;
+  }
+
+  .skill span {
+    font-size: 0.9rem;
+  }
+
+  .bar {
+    height: 12px;
+  }
+
+  .fill {
+    font-size: 0.7rem;
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill span {
+    font-size: 0.85rem;
+  }
+
+  .bar {
+    height: 10px;
+  }
+
+  .fill {
+    font-size: 0.65rem;
+    padding-right: 4px;
+  }
+}
+
+
+/* Contact */
+form {
+  display: grid;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #2c2c2c;
+  background: #1e1e1e;
+  color: #eaeaea;
+  font-size: 1rem;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #64ffda;
+}
+
+#contact {
+  text-align: center;
+}
+
+/* Contact Info Section */
+.contact-info {
+  text-align: center; /* center everything inside */
+  margin-top: 30px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons a {
+  color: #ccc;
+  margin: 0 10px;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.social-icons a:hover {
+  color: #64ffda;
+  text-shadow: 0 0 8px #64ffda;
+}
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #121212ee;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  z-index: 1000;
+}
+nav a {
+  color: #eaeaea;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #64ffda;
+}
+
+/* Buttons glow */
+.btn {
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+  box-shadow: 0 0 15px #64ffda;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+
+/* Navigation Dots */
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.navigation label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #555;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.navigation label:hover {
+  background: #64ffda;
+}
+
+/* Active dot highlighting */
+#exp1:checked ~ .navigation label[for="exp1"],
+#exp2:checked ~ .navigation label[for="exp2"],
+#exp3:checked ~ .navigation label[for="exp3"],
+#exp4:checked ~ .navigation label[for="exp4"] {
+  background: #64ffda;
+}
+
+
