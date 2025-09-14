@@ -115,6 +115,57 @@ header p {
   text-rendering: optimizeLegibility;
 }
 
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers nav links */
+  background: #0a0a0a;   /* slightly softer than pure black */
+  padding: 10px 20px;
+  z-index: 1000;
+  border-bottom: 1px solid #1a1a1a; /* subtle divider line */
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #b0b0b0;  /* softer gray, easier on the eyes */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.nav-links a:hover {
+  color: #64ffda;  /* subtle teal highlight */
+  transform: translateY(-2px); /* tiny lift effect */
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 15px; /* tighter spacing */
+  }
+
+  .nav-links a {
+    font-size: 0.85rem; /* smaller text */
+  }
+
+  .navbar {
+    padding: 8px 10px; /* slimmer navbar */
+  }
+}
+
+
+
 
 /* Experience container */
 .experience-container {
