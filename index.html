@@ -1,387 +1,560 @@
-<!-- Trigger GitHub Pages redeployment -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | ML/AI Engineer</title>
-  <!-- Font Awesome for icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Put this in your <head> to load Orbitron -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Anslem Akadu is an AI Engineer building LLM powered backend systems in Python: event-driven services on AWS and Microsoft 365, RAG, plus model fine-tuning, inference and forecasting."
+    >
+    <link rel="canonical" href="https://anslem.dev/">
+    <meta name="theme-color" content="#0b0d10">
+    <meta property="og:title" content="Anslem Akadu | AI Engineer · LLM &amp; Backend Systems">
+    <meta
+      property="og:description"
+      content="LLM applications, RAG, Python backend services and event-driven pipelines on AWS and Microsoft 365, with machine learning depth in fine-tuning, inference and forecasting."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anslem.dev/">
+    <meta name="twitter:card" content="summary">
+    <title>Anslem Akadu | AI Engineer · Applied AI · LLM &amp; Backend Systems</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css?v=2" />
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header / Hero -->
-  <header>
-    <h1 class="glow">Hey 👋, I’m </h1>
-    <h1 class="glow">Anslem Akadu Anuoluwa</h1>
-    <p class="subtitle"><span class="code-style">&lt;Data Scientist → ML/AI Engineer&gt;</span></p>
-    <p class="header-text">
-    I build ML/AI systems that don’t just run in notebooks they ship, scale, and actually solve problems.  
-    From <strong> fine-tuning LLMs </strong> for hospitals to <strong>deploying career assistants</strong> on the web, I’ve learned to take messy data,
-    limited resources, and <strong> “what if” ideas </strong>, and turn them into <strong>production-ready solutions</strong>.  
-    </p>
-    <P></P>
-    <p class="header-text">
-        My work is Iron Man–style engineering: taking raw ideas, data, and code, and forging them into ML/AI systems that actually ship.  
-    </p>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Anslem Akadu home">AA<span>.</span></a>
 
-    <a href="Akadu Anslem Resume - ML.pdf" class="btn" download="Akadu Anslem Resume - ML.pdf">Download CV</a>
-  </header>
-
-  <!-- About Me -->
-  <section id="about">
-
-    <h2>About Me</h2>
-    
-    <p>
-      I started my career in <strong>Data Science</strong>, where I built 
-      <strong>forecasting and financial models</strong> that directly shaped hospital decision-making. 
-      That gave me a strong foundation in 
-      <strong>model development, evaluation, and data-driven insights</strong>.
-    </p>
-
-    <p>
-      Over time, I realized I didn’t want my work to stop at the 
-      <strong>notebook or dashboard</strong>.  
-      I wanted to own the full journey from 
-      <strong>training ML models</strong> to 
-      <strong>deploying production systems</strong> that 
-      <strong>scale on the cloud</strong> and 
-      <strong>deliver lasting impact</strong>.
-    </p>
-
-    <p>
-      That push led me into <strong>ML/AI Engineering</strong>, where I now focus on 
-      <strong>fine-tuning LLMs</strong>, 
-      <strong>building APIs with FastAPI & Flask</strong>, 
-      <strong>deploying on AWS</strong>, and 
-      <strong>optimizing pipelines with Docker & Bash</strong>.  
-      I thrive on <strong>end-to-end ownership</strong>: experimenting, debugging, 
-      wrapping models in services, and ensuring they run reliably beyond the lab.
-    </p>
-
-    <p>
-      My mindset is simple: 
-      <strong>ML isn’t just about accuracy scores, it’s about production-ready solutions 
-      that solve real problems</strong>.  
-      Whether it’s <strong>predicting hospital finances</strong> or 
-      <strong>building open-source AI assistants</strong>, 
-      I combine <strong>data science intuition</strong> with 
-      <strong>engineering discipline</strong> to create systems that last.
-    </p>
-
-    <p>
-      At my core, I’m a <strong>builder</strong>.  
-      I <strong>learn fast</strong>, <strong>adapt quickly</strong>, 
-      and love turning <strong>limited resources into working solutions</strong> 
-      taking “a bunch of scraps” and assembling them into something impactful.
-    </p>
-  </section>
-
-
-    <!-- <h2>About Me</h2>
-    <p>
-    I’m a Data Scientist turned ML/AI Engineer with a Computer Science background and a passion for building practical, real-world solutions. My journey began in data science, but I quickly gravitated toward Machine Learning and AI not just experimenting with models, but designing, deploying, and monitoring full end-to-end systems.
-    </p>
-
-    <p>
-      I believe in learning by building. I’m not afraid to dive into new technologies, get my hands dirty, and figure things out as I go. Whether it’s scripting in Bash, working with databases, or handling light backend tasks, I enjoy connecting the pieces that make machine learning work in the real world.
-    </p>
-
-    <p>
-      What drives me is curiosity and the challenge of turning limited resources into working solutions the ability to take “a bunch of scraps” and create something impactful. I learn fast, adapt quickly, and thrive on tackling problems that push me outside my comfort zone.
-    </p> -->
-
-  </section>
-
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Experience</h2>
-
-    <div class="experience-container">
-
-      <!-- Slides Wrapper -->
-      <div class="slides">
-
-        <!-- Slide 1 -->
-        <div class="item">
-          <h3>LifeBank — <strong>ML/AI Engineer </strong> <span>(May 2025 – Present)</span></h3>
-          <ul>
-            <li>Fine-tuned <strong>Gemma 1B</strong> with QLoRA adapters for hospital finance tasks, including domain adaptation and instruction alignment.</li>
-            <li>Set up and managed <strong>AWS EC2 infrastructure</strong> for model training, running experiments with bash automation and GPU optimization.</li>
-            <li>Refactored the AI module to migrate from Gemma to a larger <strong>Qwen model</strong>, improving reasoning and scalability.</li>
-            <li>Designed a <strong>multi-model architecture</strong> (router, reasoning, and expressive models) for personalized hospital financial assistance.</li>
-            <p></p>
-            <li>
-              <strong>Tech:</strong>
-              <span class="tech-skill">Python</span>
-              <span class="tech-skill">PyTorch</span>
-              <span class="tech-skill">Transformers</span>
-              <span class="tech-skill">QLoRA</span>
-              <span class="tech-skill">Flask</span>
-              <span class="tech-skill">Bash</span>
-              <span class="tech-skill">EC2</span>
-            </li>
-          </ul>
-        </div>
-        <p></p>
-        <!-- Slide 2 -->
-        <div class="item">
-          <h3>LifeBank — <strong>Data Scientist (Financial Systems) </strong> <span>(Jan 2025 – Apr 2025)</span></h3>
-          <ul>
-            <li>Built predictive models for <strong>key hospital financial metrics</strong> (profitability, liquidity, leverage, efficiency) using XGBoost and Prophet.</li>
-            <li>Introduced a <strong>hybrid-weighting logic</strong> (80% naive calc + 20% ML) to improve reliability when real data was limited.</li>
-            <li>Implemented <strong>revenue & cash flow forecasting</strong> with Prophet, incorporating hospital size and state as regressors for tailored predictions.</li>
-            <li>Tested models with hospital scenarios, surfacing early signals of <strong>negative cash flow & financial instability</strong> to guide proactive decisions.</li>
-            <p></p>
-            <li>
-              <strong>Tech:</strong>
-              <span class="tech-skill">Python</span>
-              <span class="tech-skill">XGBoost</span>
-              <span class="tech-skill">Prophet</span>
-              <span class="tech-skill">QLoRA</span>
-              <span class="tech-skill">scikit-learn</span>
-            </li>
-          </ul>
-        </div>
-        <p></p>
-        <!-- Slide 3 -->
-        <div class="item">
-          <h3>LifeBank — <strong> Data Scientist (Healthcare Forecasting) </strong> <span>(Sep 2024 – Dec 2024)</span></h3>
-          <ul>
-            <li>Developed healthcare-focused predictive models(NerveX) for blood supply, oxygen availability, and medical stock management.</li>
-            <li>Implemented <strong>time-series forecasting </strong> pipelines using Prophet and regression methods to reduce risks of stock-outs.</li>
-            <li>Enhanced QuipX system with predictive maintenance models, enabling early detection of equipment servicing needs.</li>
-            <li>Partnered with healthcare teams to translate forecasts into actionable strategies for hospitals and clinics.</li>
-            <p></p>
-            <li>
-              <strong>Tech:</strong>
-              <span class="tech-skill">Python</span>
-              <span class="tech-skill">Random Forest</span>
-              <span class="tech-skill">Prophet</span>
-              <span class="tech-skill">XGBoost</span>
-              <span class="tech-skill">scikit-learn</span>
-            </li>
-          </ul>
-        </div>
-        <p></p>
-        <!-- Slide 4  -->
-        <div class="item">
-          <h3>LifeBank — <strong> Data Analyst Intern (Product Analytics) </strong> <span>(Jul 2024 – Aug 2024)</span></h3>
-          <ul>
-            <li>Analyzed adoption and churn datasets for LifeBank’s healthtech products.</li>
-            <li>Delivered insights on user growth strategies for the Nerve app.</li>
-
-            <li>Explored adoption and churn datasets for LifeBank’s healthtech products, identifying patterns in user engagement.</li>
-            <li>Delivered actionable insights on <strong>user growth and retention strategies </strong> for the Nerve app.</li>
-            <li>Crafted a good analysis to communicate product performance trends to the management.</li>
-            <li>Strengthened data cleaning and Python workflows for cleaning and analyzing operational data.</li>
-            <p></p>    
-            <li>
-              <strong>Tech:</strong>
-              <span class="tech-skill">Excel</span>
-              <span class="tech-skill">Python</span>
-              <span class="tech-skill">Google sheet</span>
-              <span class="tech-skill">Data Visualization</span>
-              <span class="tech-skill">SQL</span>
-            </li>            
-          </ul>
-        </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cv" href="assets/cv/Anslem_Akadu_CV_AI_Engineer.pdf" download>Download CV</a>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
+    <main id="main">
+      <header class="hero" id="top">
+        <p class="hero-name">Anslem Akadu</p>
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          AI Engineer · Applied AI · LLM &amp; Backend Systems
+        </p>
+        <h1>Building practical AI systems <em>from idea to production.</em></h1>
+        <p class="hero-copy">
+          I build LLM powered backend systems in Python: event-driven services on AWS
+          and Microsoft 365 that classify, extract, retrieve, summarise and act on real
+          business data, with structured outputs, tests and deployment I own. Before
+          that, I fine-tuned open weight models and built forecasting systems in health
+          tech.
+        </p>
 
-      <div class="item">
-        <h3>ElevatrAI</h3>
-        <p>Open-source career assistant that helps users identify skill gaps, refine resumes, and generate personalized learning paths in tech.</p>
-        <ul>
-          <li>Built an end-to-end Flask web app with clean project structure (modularized `app/`, `resources/`, `data/`, `templates/`).</li>
-          <li>Implemented a skill-to-career recommender system using <strong> cosine similarity </strong> and <strong> NLP-based embeddings (SentenceTransformers) </strong>.</li>
-          <li>Integrated with a custom-hosted Hugging Face LLM to generate personalized learning roadmaps.</li>
-          <li>Designed JSON-driven resources for scalability, covering role data, skill mappings, and user session tracking.</li>
-          <li>Deployed first working version on Render and <strong>open-sourced the project</strong> on GitHub for community contributions.</li>
-        </ul>
-
-        <div class="item-links">
-          <a href="https://elevatrai.onrender.com" target="_blank"> Live Demo </a>
-          <p>  </p>
-          <a href="https://github.com/Anslemakadu/ElevatrAI" target="_blank">GitHub Repo</a>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#experience">
+            See what I’ve built <span aria-hidden="true">↓</span>
+          </a>
+          <a class="button button-secondary" href="assets/cv/Anslem_Akadu_CV_AI_Engineer.pdf" download>
+            Download CV <span aria-hidden="true">↓</span>
+          </a>
         </div>
-        <p></p>
-        <p></p>
-        <p></p>
-        <li>
-          <strong>Tech:</strong>
-          <div class="tech-skill-container"> 
-            <span class="tech-skill">Cosine Similarities</span>
-            <span class="tech-skill">Sentence Transformer</span>
-            <span class="tech-skill">Flask</span>
-            <span class="tech-skill">scikit-learn</span>
-            <span class="tech-skill">HTML/CSS</span>
-            <span class="tech-skill">JSON</span>
-            <span class="tech-skill">Render</span>
-          </div>
-        </li>
-      </div>
 
-      <div class="projects-grid">    
-      
-        <div class="item">
-          <h3>LLM FastAPI Boilerplate</h3>
-          <p>Production-ready backend service for deploying GGUF language models with FastAPI and Docker.</p>
-          <ul>
-            <li>Designed a type-safe API layer with FastAPI and Pydantic schemas for clean request/response handling.</li>
-            <li>Integrated <strong>llama-cpp-python</strong> for serving <strong>GGUF-format LLMs</strong> with configurable inference parameters <strong>(temperature, top_p, top_k).</strong></li>
-            <li>Implemented production features including CORS, health checks, and OpenAPI documentation for developer-friendly usage.</li>
-            <li>Containerized with <strong>Docker</strong> for seamless deployment and reproducibility across environments.</li>
-            <li>Deployed on Hugging Face Spaces with working endpoints for <strong>/generate</strong>, <strong>/chat</strong>, and <strong>/health</strong>.</li>
-          </ul>
+        <div class="hero-meta">
+          <span>Based in Nigeria (UTC+1)</span>
+          <span class="meta-links">
+            <a href="mailto:anslemakadu1@gmail.com">Email</a>
+            <a href="https://github.com/Anslemakadu" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/anslem-akadu" target="_blank" rel="noopener">LinkedIn</a>
+          </span>
+        </div>
+      </header>
 
-          <div class="item-links">
-            <a href="https://github.com/Anslemakadu/llm-fastapi-boilerplate" target="_blank">GitHub Repo</a>
-            <p>  </p>
-            <a href="https://huggingface.co/spaces/anslem19/llm-fastapi-boilerplate" target="_blank">Live Demo</a>
+      <section class="section about-section" id="about" aria-labelledby="about-heading">
+        <p class="section-label">01 / About</p>
+        <div class="about-grid">
+          <h2 id="about-heading">The work is bigger than the model.</h2>
+          <div class="about-copy">
+            <p>
+              I enjoy bringing AI closer to real world applications. That means getting
+              hands on with the technical problem, choosing a sensible approach, and
+              staying involved through backend integration, testing, deployment, and
+              iteration.
+            </p>
+            <p>
+              Most of my recent work lives inside Microsoft 365 and AWS: services that
+              react to email, chat and meeting events, ask a model a clearly scoped
+              question, check the answer, and deliver something a person can act on.
+            </p>
+
+            <h3 class="principles-heading">How I build</h3>
+            <ul class="principles">
+              <li>Treat the model as one component: validate its output and plan for it being wrong.</li>
+              <li>Keep private data out of prompts unless it needs to be there.</li>
+              <li>Make every step safe to retry: queues and idempotent writes, not hope.</li>
+              <li>Weigh latency and cost before reaching for the biggest model.</li>
+              <li>Test the unglamorous paths; that is where incidents start.</li>
+            </ul>
+            <p class="aside-note">Coffee, code, deploy, panic, repeat.</p>
           </div>
-          <p></p>
-          <p></p>
-          <p></p>
-          <li>
-            <strong>Tech:</strong>
-            <div class="tech-skill-container"> 
-              <span class="tech-skill">FastAPI</span>
-              <span class="tech-skill">Pydantic</span>
-              <span class="tech-skill">llama-cpp-python</span>
-              <span class="tech-skill">Docker</span>
-              <span class="tech-skill">Hugging Face Spaces</span>
-              <span class="tech-skill">Python</span>
+        </div>
+
+        <div class="focus-grid" aria-label="Two engineering profiles">
+          <article class="focus-card">
+            <p class="focus-label">Primary focus</p>
+            <h3>AI Engineer</h3>
+            <p>
+              LLM applications and Python backend services: structured outputs, tool
+              calling, RAG, and event-driven pipelines on AWS and Microsoft 365.
+            </p>
+            <a href="assets/cv/Anslem_Akadu_CV_AI_Engineer.pdf" download>
+              AI Engineer CV (PDF) <span aria-hidden="true">↓</span>
+            </a>
+          </article>
+          <article class="focus-card">
+            <p class="focus-label">Specialist depth</p>
+            <h3>Machine Learning Engineer</h3>
+            <p>
+              Fine-tuning and serving open weight models (QLoRA, quantized GGUF),
+              forecasting with XGBoost and Prophet, and inference tuned for cost.
+            </p>
+            <a href="assets/cv/Anslem_Akadu_CV_ML_Engineer.pdf" download>
+              ML Engineer CV (PDF) <span aria-hidden="true">↓</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-heading">
+        <p class="section-label">02 / Experience</p>
+        <div class="section-heading">
+          <h2 id="experience-heading">Engineering across the stack.</h2>
+          <p>
+            Current work first: AI services on Microsoft 365 and AWS. Earlier:
+            fine-tuning, inference and forecasting in health tech.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item current">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="role-head">
+              <div>
+                <h3>AI/ML Engineer</h3>
+                <p class="company">20four7VA <span>· Remote staffing company · Remote</span></p>
+              </div>
+              <span class="date">Oct 2025 – Present</span>
             </div>
-          </li>
+            <p class="role-intro">
+              I design, build, test and deploy the company’s AI services in Python on
+              AWS serverless, integrated with Microsoft 365. These are private
+              employment systems, so the code is not public.
+            </p>
+            <ul>
+              <li>
+                <strong>Executive email intelligence.</strong> A multiuser Python service
+                on AWS SAM (Lambda, SQS, DynamoDB) that ingests Microsoft Graph mail and
+                calendar webhooks, triages each email by priority (an LLM rubric plus
+                deterministic rules), and sends urgent alerts and Pydantic validated
+                daily and weekly briefs to Teams.
+              </li>
+              <li>
+                <strong>Teams AI assistant.</strong> A streaming tool calling agent (18
+                tools) over Graph mail, calendar and meeting transcripts that drafts
+                replies and books meetings with delegated user tokens, and sends nothing
+                until the user approves it on an Adaptive Card. Briefs are also exposed
+                in Microsoft 365 Copilot.
+              </li>
+              <li>
+                <strong>Teams compliance monitoring.</strong> A Graph change notification
+                pipeline (API Gateway, SQS, Lambda) with a trigger filter of 146 phrases,
+                conversation context retrieval, redaction of 17 PII and secret types
+                before inference, and strict JSON schema classification against 11
+                policies. Flagged cases alert the right manager in Teams.
+              </li>
+              <li>
+                <strong>Lead and meeting intelligence.</strong> GoHighLevel and Zoom
+                webhook pipelines (SQS, Lambda) for multistage LLM extraction and
+                classification, lead enrichment and scoring with DataForSEO and SerpAPI,
+                and a RAG pipeline that retrieves similar past job descriptions with
+                OpenAI embeddings so new JD drafts follow what has worked before.
+              </li>
+              <li>
+                <strong>Business continuity monitoring.</strong> A scheduled Lambda that
+                matches GDACS disaster events and WMO weather alerts to around 200
+                geocoded staff locations (haversine distance with tiered 50/100 km risk
+                levels, Shapely for alert polygons) and sends deduplicated Teams alerts
+                that escalate when the risk rises.
+              </li>
+              <li>
+                <strong>Reliability and testing.</strong> Idempotent DynamoDB conditional
+                writes, Graph subscription renewal, dead letter queues with CloudWatch
+                alarms, per user data isolation, and nearly 300 automated pytest tests
+                using moto and fakes.
+              </li>
+            </ul>
+            <details class="role-details">
+              <summary>Engineering decisions worth asking me about</summary>
+              <ul>
+                <li>
+                  Redaction runs before the model call, and every compliance verdict must
+                  match a strict schema. Failures go back to the queue and, after
+                  retries, to a dead letter queue instead of being guessed.
+                </li>
+                <li>
+                  The assistant can draft but not send: sending needs an Adaptive Card
+                  click, and each action is claimed once so a double click cannot send
+                  twice.
+                </li>
+                <li>
+                  A small model handles high volume triage and a larger one writes
+                  briefings, with token usage metered per user.
+                </li>
+                <li>
+                  Graph subscriptions expire, so a scheduled reconciler renews them and
+                  recreates any that have disappeared.
+                </li>
+                <li>
+                  The JD generator retrieves the closest past job descriptions and uses
+                  them as style references, not as facts to copy.
+                </li>
+                <li>
+                  Microsoft 365 Copilot reads the briefings through a declarative agent
+                  backed by an OpenAPI plugin.
+                </li>
+              </ul>
+            </details>
+            <div class="tags" aria-label="Relevant technologies">
+              <span>Python</span>
+              <span>AWS SAM</span>
+              <span>Lambda · SQS · DynamoDB</span>
+              <span>Microsoft Graph</span>
+              <span>OpenAI API</span>
+              <span>pytest</span>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="role-head">
+              <div>
+                <h3>ML/AI Engineer</h3>
+                <p class="company">
+                  LifeBank (Nigeria) Ltd <span>· Health tech &amp; medical logistics</span>
+                </p>
+              </div>
+              <span class="date">May 2025 – Oct 2025</span>
+            </div>
+            <ul>
+              <li>
+                Fine-tuned Gemma 3 1B with QLoRA (PEFT) for domain specific hospital
+                finance tasks: instruction alignment and domain adaptation.
+              </li>
+              <li>
+                Migrated the assistant from Gemma to Qwen, cutting inference latency
+                by 20%.
+              </li>
+              <li>
+                Automated AWS EC2 GPU training environment setup with Bash, reducing
+                setup time by 40%.
+              </li>
+            </ul>
+            <div class="tags" aria-label="Relevant technologies">
+              <span>PyTorch</span>
+              <span>Hugging Face Transformers</span>
+              <span>QLoRA</span>
+              <span>AWS EC2</span>
+              <span>Bash</span>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="role-head">
+              <div>
+                <h3>Data Scientist · Financial Systems</h3>
+                <p class="company">LifeBank (Nigeria) Ltd</p>
+              </div>
+              <span class="date">Jan 2025 – Apr 2025</span>
+            </div>
+            <ul>
+              <li>
+                Built XGBoost and Prophet models forecasting hospital profitability,
+                liquidity, leverage and efficiency, with hospital size and state as
+                regressors for revenue and cash flow forecasts.
+              </li>
+              <li>
+                Designed a hybrid forecast (80% naive baseline, 20% ML) to stay robust
+                on sparse data, surfacing early warning signals of negative cash flow.
+              </li>
+            </ul>
+            <div class="tags" aria-label="Relevant technologies">
+              <span>XGBoost</span>
+              <span>Prophet</span>
+              <span>Forecasting</span>
+              <span>Python</span>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="role-head">
+              <div>
+                <h3>Data Scientist · Healthcare Forecasting</h3>
+                <p class="company">LifeBank (Nigeria) Ltd</p>
+              </div>
+              <span class="date">Oct 2023 – Dec 2024</span>
+            </div>
+            <ul>
+              <li>
+                Built time series forecasting pipelines for blood, oxygen and medical
+                stock demand, reducing stockout risk by 20%.
+              </li>
+              <li>
+                Developed predictive maintenance models for medical equipment and a
+                forecasting engine with scenario simulations for supply planning.
+              </li>
+            </ul>
+            <div class="tags" aria-label="Relevant technologies">
+              <span>Time series</span>
+              <span>Prophet</span>
+              <span>scikit-learn</span>
+            </div>
+          </article>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-list">
-      <p></p>
-      <h3>Programming & Data:</h3>
-      <div class="tech-skill-container">
-        <span class="tech-skill">Python</span>
-        <span class="tech-skill">SQL</span>
-        <span class="tech-skill">Pandas</span>
-        <span class="tech-skill">NumPy</span>
-        <span class="tech-skill">Data Visualization</span>
-        <span class="tech-skill">Excel</span>
-      </div>
-      <p></p>
-      <h3>Machine Learning:</h3>
-      <div class="tech-skill-container">
-        <span class="tech-skill">Supervised Learning (Classification, Regression)</span>
-        <span class="tech-skill">Scikit-learn</span>
-        <span class="tech-skill">Time Series Forecasting</span>
-        <span class="tech-skill">Feature Engineering</span>
-        <span class="tech-skill">Model Evaluation & Metrics</span>
-        <span class="tech-skill">Unsupervised Learning (Clustering, Dimensionality Reduction)</span>
-      </div>
-      <p></p>
-      <h3>Deep Learning & AI:</h3>
-      <div class="tech-skill-container">
-        <span class="tech-skill">PyTorch</span>
-        <span class="tech-skill">TensorFlow</span>
-        <span class="tech-skill">NLP</span>
-        <span class="tech-skill">LLMs (Hugging Face, QLoRA)</span>
-      </div>
-      <p></p>
-      <h3>MLOps & Deployment:</h3>
-      <div class="tech-skill-container">
-        <span class="tech-skill">FastAPI</span>
-        <span class="tech-skill">Flask</span>
-        <span class="tech-skill">Docker</span>
-        <span class="tech-skill">AWS (EC2, S3)</span>
-        <span class="tech-skill">Linux & Bash</span>
-        <span class="tech-skill">Git & GitHub</span>
-      </div>
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <p class="section-label">03 / Selected work</p>
+        <div class="section-heading">
+          <h2 id="projects-heading">Built to be used.</h2>
+          <p>
+            Public code you can inspect. My employment systems are private, so this is
+            where to read how I write software.
+          </p>
+        </div>
 
-    </div>
-  </section>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-number">01</span>
+              <span class="project-type">Open source · 2025</span>
+            </div>
+            <h3>LLM FastAPI Boilerplate</h3>
+            <p class="project-summary">
+              A small, reproducible FastAPI service for serving quantized GGUF language
+              models on CPU.
+            </p>
+            <p>
+              Pydantic request and response schemas, llama-cpp-python inference with
+              configurable sampling, and <code>/generate</code>, <code>/chat</code> (with
+              conversation history) and <code>/health</code> endpoints, packaged with Docker
+              and deployed to Hugging Face Spaces. I iterated across Phi, Mistral 7B,
+              Qwen2.5 and TinyLlama quantizations to fit CPU only hosting.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/Anslemakadu/llm-fastapi-boilerplate"
+                target="_blank"
+                rel="noopener"
+              >
+                View repository<span class="visually-hidden"> for LLM FastAPI Boilerplate</span> ↗
+              </a>
+            </div>
+            <div class="tags" aria-label="Project technologies">
+              <span>FastAPI</span>
+              <span>Pydantic</span>
+              <span>llama-cpp-python</span>
+              <span>Docker</span>
+            </div>
+          </article>
 
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-number">02</span>
+              <span class="project-type">Open source · 2025</span>
+            </div>
+            <h3>ElevatrAI</h3>
+            <p class="project-summary">
+              A career guidance web app that compares a resume with seven tech roles,
+              shows the skill gap and builds a learning roadmap.
+            </p>
+            <p>
+              Parses PDF and DOCX resumes, extracts skills against a JSON taxonomy of 56
+              skills, ranks role fit with cosine similarity over skill vectors
+              (scikit-learn), and assembles a plan in three phases from curated resources.
+              A Flask app deployed with Gunicorn on Render.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Anslemakadu/ElevatrAI" target="_blank" rel="noopener">
+                View repository<span class="visually-hidden"> for ElevatrAI</span> ↗
+              </a>
+              <a href="https://elevatrai.onrender.com" target="_blank" rel="noopener">
+                Open live app<span class="visually-hidden"> for ElevatrAI</span> ↗
+              </a>
+            </div>
+            <p class="project-note">Free tier hosting: the first load can take up to a minute.</p>
+            <div class="tags" aria-label="Project technologies">
+              <span>Flask</span>
+              <span>scikit-learn</span>
+              <span>PyPDF2</span>
+              <span>Render</span>
+            </div>
+          </article>
+        </div>
+      </section>
 
-  <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <form id="contact-form" action="https://formspree.io/f/xzzawobj" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send</button>
-      </form>
+      <section class="section" id="skills" aria-labelledby="skills-heading">
+        <p class="section-label">04 / Toolkit</p>
+        <div class="skills-intro">
+          <h2 id="skills-heading">A practical technical toolkit.</h2>
+          <p>
+            Applied AI and backend delivery come first, supported by machine learning
+            foundations and deployment experience.
+          </p>
+        </div>
 
-      <!-- Hidden thank you message -->
-      <div id="thank-you" style="display: none; margin-top: 20px; color: #4caf50; font-weight: bold;">
-        ✅ Thanks for your message! I'll get back to you soon.
-      </div>
-    </section>
+        <div class="skills-grid">
+          <article class="skill-group skill-group-primary">
+            <p class="skill-number">01</p>
+            <h3>Applied AI &amp; LLM Engineering</h3>
+            <ul>
+              <li>OpenAI and Anthropic APIs</li>
+              <li>Structured outputs (JSON Schema, Pydantic)</li>
+              <li>Tool calling and streaming</li>
+              <li>Retrieval augmented generation (RAG)</li>
+              <li>Embeddings and similarity search</li>
+              <li>PII and secret redaction</li>
+              <li>QLoRA and PEFT fine-tuning</li>
+              <li>Hugging Face Transformers</li>
+              <li>Quantized GGUF inference (llama-cpp-python)</li>
+            </ul>
+          </article>
 
-    <script>
-      const form = document.getElementById("contact-form");
-      const thankYou = document.getElementById("thank-you");
+          <article class="skill-group skill-group-primary">
+            <p class="skill-number">02</p>
+            <h3>Backend &amp; AI Systems Engineering</h3>
+            <ul>
+              <li>Python, FastAPI, and Flask</li>
+              <li>REST APIs and webhooks</li>
+              <li>Pydantic data contracts</li>
+              <li>Event-driven queue workers</li>
+              <li>pytest and moto</li>
+              <li>SQL and Bash</li>
+            </ul>
+          </article>
 
-      form.addEventListener("submit", async (e) => {
-        e.preventDefault(); // stop page reload
-        const formData = new FormData(form);
+          <article class="skill-group">
+            <p class="skill-number">03</p>
+            <h3>Machine Learning &amp; Data</h3>
+            <ul>
+              <li>PyTorch and scikit-learn</li>
+              <li>XGBoost and Prophet</li>
+              <li>Time series forecasting</li>
+              <li>Feature engineering and model evaluation</li>
+              <li>SentenceTransformers and embeddings</li>
+              <li>pandas and NumPy</li>
+              <li>Geospatial matching (haversine, Shapely)</li>
+            </ul>
+          </article>
 
-        const response = await fetch(form.action, {
-          method: "POST",
-          body: formData,
-          headers: { Accept: "application/json" }
-        });
+          <article class="skill-group">
+            <p class="skill-number">04</p>
+            <h3>Cloud, Deployment &amp; Reliability</h3>
+            <ul>
+              <li>AWS Lambda, API Gateway, and SQS</li>
+              <li>DynamoDB, EventBridge, and CloudWatch</li>
+              <li>AWS EC2 (GPU)</li>
+              <li>AWS SAM (infrastructure as code)</li>
+              <li>Docker and Redis</li>
+              <li>Linux, Git, and GitHub Actions</li>
+              <li>Idempotency and dead letter queues</li>
+              <li>Claude Code and Codex</li>
+            </ul>
+          </article>
 
-        if (response.ok) {
-          form.style.display = "none"; // hide form
-          thankYou.style.display = "block"; // show thank you
-        } else {
-          alert("Oops! Something went wrong.");
-        }
-      });
-    </script>
+          <article class="skill-group skill-group-wide">
+            <p class="skill-number">05</p>
+            <h3>Microsoft 365 &amp; Integrations</h3>
+            <ul>
+              <li>Microsoft Graph (mail, calendar, Teams, transcripts)</li>
+              <li>Graph change notifications</li>
+              <li>MSAL (app only and delegated)</li>
+              <li>Teams bots and Adaptive Cards</li>
+              <li>Microsoft 365 Copilot declarative agents</li>
+              <li>Zoom, GoHighLevel, DataForSEO, and SerpAPI</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    <!-- Social Icons -->
-    <section class="contact-info">
-      <h3>Let’s Connect!</h3>
-      <p>If you have any questions, opportunities, or just want to say hi, feel free to reach out. I’m always open to connecting with fellow professionals, collaborators, and anyone interested in ML/AI.</p>
-    
-      <div class="social-icons">
-        <a href="https://github.com/Anslemakadu" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/anslem-akadu" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:akaduanslem1@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-  </section>
+      <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+        <p class="section-label">05 / Contact</p>
+        <div class="contact-grid">
+          <div>
+            <h2 id="contact-heading">Let’s build something useful.</h2>
+            <p>
+              If you’re hiring for an AI Engineer, Applied AI or ML Engineer role, I’d be
+              glad to talk about the problem your team is solving.
+            </p>
+            <a class="email-link" href="mailto:anslemakadu1@gmail.com">
+              anslemakadu1@gmail.com <span aria-hidden="true">↗</span>
+            </a>
+            <div class="social-row">
+              <a href="https://linkedin.com/in/anslem-akadu" target="_blank" rel="noopener">
+                LinkedIn
+              </a>
+              <a href="https://github.com/Anslemakadu" target="_blank" rel="noopener">
+                GitHub
+              </a>
+              <a href="assets/cv/Anslem_Akadu_CV_AI_Engineer.pdf" download>AI Engineer CV</a>
+              <a href="assets/cv/Anslem_Akadu_CV_ML_Engineer.pdf" download>ML Engineer CV</a>
+            </div>
+          </div>
 
-  <footer>
-    © 2025 Anslem Akadu Anuoluwa. All rights reserved.
-  </footer>
-</body>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xzzawobj"
+            method="POST"
+            aria-describedby="form-status"
+          >
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="button button-primary" type="submit">
+              <span class="button-text">Send message</span>
+              <span aria-hidden="true">↗</span>
+            </button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Anslem Akadu</span>
+      <span>AI Engineer · Applied AI · LLM &amp; Backend Systems</span>
+      <span>
+        <a href="https://github.com/Anslemakadu" target="_blank" rel="noopener">GitHub</a>
+        ·
+        <a href="https://linkedin.com/in/anslem-akadu" target="_blank" rel="noopener">LinkedIn</a>
+      </span>
+    </footer>
+  </body>
 </html>

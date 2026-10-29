@@ -1,0 +1,30 @@
+# Private CV workspace: build sources, content JSON, audit reports, archive.
+# The published CVs live in assets/cv/ and are copied there by cv/build.sh.
+/cv/
+
+# Local tooling and editor settings
+.claude/
+.codex/
+.vscode/
+.idea/
+
+# Dependencies, caches and build output
+node_modules/
+__pycache__/
+*.pyc
+
+# Notes, drafts and experiments
+notes/
+drafts/
+experiments/
+scratch/
+*.docx
+
+# Secrets and environment files
+.env
+.env.*
+
+# OS and log files
+.DS_Store
+Thumbs.db
+*.log
